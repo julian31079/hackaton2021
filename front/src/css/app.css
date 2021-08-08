@@ -1,0 +1,23 @@
+@import "./style.css";
+
+/*
+html {
+  cursor: url('../img/cursor.png'), auto;
+}
+
+a, button, .btn {
+  cursor: url('../img/cursor-hover.png'), auto !important;
+}
+
+.btn:hover {
+  filter: brightness(0.75);
+}
+*/
+
+input {
+  background-color: #eeeeee88 !important;
+}
+
+* :focus {
+  opacity: 0.5;
+}

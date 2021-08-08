@@ -1,0 +1,276 @@
+.op-0 {
+  opacity: 0;
+}
+
+.op-1 {
+  opacity: 0.2;
+}
+
+.op-2 {
+  opacity: 0.4;
+}
+
+.op-3 {
+  opacity: 0.6;
+}
+
+.op-4 {
+  opacity: 0.8;
+}
+
+.op-5 {
+  opacity: 1;
+}
+
+h1.stroke, h2.stroke, h3.stroke {
+  -webkit-text-stroke: 1.5px #000000aa;
+}
+
+/* TRANSITIONS */
+
+.trns-del-1 {
+  transition-delay: 0.2s;
+}
+
+.trns-del-2 {
+  transition-delay: 0.4s;
+}
+
+.trns-del-3 {
+  transition-delay: 0.8s;
+}
+
+.trns-del-4 {
+  transition-delay: 1.6s;
+}
+
+.trns-del-5 {
+  transition-delay: 3.2s;
+}
+
+/* TEXT */
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.z-n2 {
+  z-index: -20;
+}
+
+.z-n1 {
+  z-index: -10;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 10;
+}
+
+.z-2 {
+  z-index: 20;
+}
+
+.btn-light:hover {
+  background-color: #bbbbbb;
+  border-color: #bbbbbb;
+}
+
+.t-decor {
+  position: relative;
+  display: inline-block;
+}
+
+.t-decor::before, .t-decor::after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  background-color: var(--bs-light);
+  width: 0;
+  transition: width 0.5s, opacity 0.5s;
+  border-radius: 100% 0%;
+}
+
+.t-decor:hover::before, .t-decor:hover::after {
+  opacity: 100%;
+}
+
+.display-1.t-decor::before, .display-1.t-decor::after {
+  height: 0.2em;
+  margin: auto 0.5em;
+  top: 0;
+  bottom: 0;
+}
+
+.display-1.t-decor:hover::before, .display-1.t-decor:hover::after {
+  width: 1em;
+}
+
+.display-1.t-decor::before {
+  left: 100%;
+}
+
+.display-1.t-decor::after {
+  right: 100%;
+}
+
+.sub.t-decor:after {
+  height: 0.1em;
+  margin: 0.2em auto;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.sub.t-decor:hover::after {
+  width: 100%;
+}
+
+/* ANIMATIONS */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes left-in {
+  from {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes right-in {
+  from {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes top-in {
+  from {
+    transform: translateY(-100vh);
+  }
+}
+
+@keyframes bottom-in {
+  from {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+  }
+}
+
+@keyframes top-down {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+.fade-in {
+  animation-name: fade-in;
+}
+
+.left-in {
+  animation-name: left-in;
+}
+
+.right-in {
+  animation-name: right-in;
+}
+
+.top-in {
+  animation-name: top-in;
+}
+
+.bottom-in {
+  animation-name: bottom-in;
+}
+
+.scale-in {
+  animation-name: scale-in;
+}
+
+.top-down {
+  animation-name: top-down;
+  animation-timing-function: linear;
+}
+
+.down-top {
+  animation-name: top-down;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+}
+
+.fade-scale-in {
+  animation-name: fade, scale-in;
+}
+
+.anim-1, .anim-2, .anim-3, .anim-4, .anim-5 {
+  position: relative;
+}
+
+.anim-1 {
+  animation-duration: 0.2s;
+}
+
+.anim-2 {
+  animation-duration: 0.4s;
+}
+
+.anim-3 {
+  animation-duration: 0.8s;
+}
+
+.anim-4 {
+  animation-duration: 1.6s;
+}
+
+.anim-5 {
+  animation-duration: 3.2s;
+}
+
+.anim-6 {
+  animation-duration: 6.4s;
+}
+
+.anim-7 {
+  animation-duration: 12.8s;
+}
+
+.anim-del-1 {
+  animation-delay: 0.2s;
+}
+
+.anim-del-2 {
+  animation-delay: 0.4s;
+}
+
+.anim-del-2 {
+  animation-delay: 0.8s;
+}
+
+.anim-del-4 {
+  animation-delay: 1.6s;
+}
+
+.anim-del-5 {
+  animation-delay: 3.2s;
+}
+
+.anim-loop {
+  animation-iteration-count: infinite;
+}
