@@ -2,18 +2,19 @@ import React, {Component, Fragment} from 'react';
 
 export default function Text({props}) {
   props = props || {};
-  let value = props.value || "Some text";
+  let value = props.value || "Escribe algo...";
+  let tag = props.tag;
   return (
-    <p className="py-2 m-0">{value}</p>
+    <p className={"py-5 m-0 text-center " + tag}>{value}</p>
   )
 }
 
 export const EditText = ({props, onEdit}) => {
   props = props || {};
-  let value = props.value || "Some text";
+  let value = props.value || "Escribe algo...";
   return (
     <Fragment>
-      <Text props={{value: "Texto"}} />
+      <p className={"py-2 m-0 text-center"}>Texto</p>
       <textarea value={value} class="form-control" rows="3" onChange={
         (e) => {
           let el = Object.assign({}, props);

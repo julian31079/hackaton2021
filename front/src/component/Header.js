@@ -4,7 +4,7 @@ import Input from './Input';
 
 export default function Header({props}) {
   props = props || {};
-  let title = props.title || "Maya Londono";
+  let title = props.title || "Título";
   let description = props.description || "Descripción";
   return (
     <div className="position-relative">

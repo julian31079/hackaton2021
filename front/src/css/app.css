@@ -14,8 +14,12 @@ a, button, .btn {
 }
 */
 
-input {
+input, textarea {
   background-color: #eeeeee88 !important;
+}
+
+p.h1 {
+  text-align: center;
 }
 
 * :focus {

@@ -5,6 +5,7 @@ import Header, {EditHeader} from './component/Header';
 import Carousel, {EditCarousel} from './component/Carousel';
 import Img, {EditImg} from './component/Img';
 import Text, {EditText} from './component/Text';
+import Footer, {EditFooter} from './component/Footer';
 
 import './css/custom.scss';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -31,6 +32,11 @@ export const components = [
     el: (props) => <Text props={props} />,
     edit: (props, onEdit) => <EditText props={props} onEdit={onEdit} />,
   },
+  {
+    name: "Pie de página",
+    el: (props) => <Footer props={props} />,
+    edit: (props, onEdit) => <EditFooter props={props} onEdit={onEdit} />,
+  }
 ];
 
 export default class App extends Component {
@@ -43,6 +49,17 @@ export default class App extends Component {
           {
             id: 0,
             props: {
+              title: "Maya Londono",
+              description: "Tu viaje comienza aquí",
+            },
+          },
+        ],
+        [
+          {
+            id: 3,
+            props: {
+              tag: "h1 mt-4 mb-3",
+              value: "¡Explora!",
             },
           },
         ],
@@ -51,10 +68,44 @@ export default class App extends Component {
             id: 1,
             props: {
               imgs: [
-                "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-                "https://images.ctfassets.net/hrltx12pl8hq/3MbF54EhWUhsXunc5Keueb/60774fbbff86e6bf6776f1e17a8016b4/04-nature_721703848.jpg?fit=fill&w=480&h=270",
+                "https://cdn.pixabay.com/photo/2017/07/18/19/39/lighthouse-2516803_960_720.jpg",
+                "https://cdn.pixabay.com/photo/2015/10/19/18/23/salento-996461_960_720.jpg",
+                "https://cdn.pixabay.com/photo/2020/03/12/10/38/colombia-4924705_960_720.jpg",
+                "https://cdn.pixabay.com/photo/2020/03/07/10/03/colombia-4909308_960_720.jpg",
+                "https://cdn.pixabay.com/photo/2019/09/07/02/25/city-4457801_960_720.jpg",
+                "https://cdn.pixabay.com/photo/2017/07/01/19/14/colombia-2462346_960_720.jpg",
+                "https://cdn.pixabay.com/photo/2017/02/11/02/31/rosario-islands-2056905_960_720.jpg",
               ],
             },
+          },
+        ],
+        [
+          {
+            id: 3,
+            props: {
+              value: " ",
+            }
+          },
+          {
+            id: 3,
+            props: {
+              value: "¡Con Maya Londono podrás visitar los mayores sitios turísticos del país!"
+                + " Somos una agencia de viajes ubicada en Medellín, Antioquia; ofrecemos paquetes de"
+                + " viaje, alquiler de carros, viajes empresariales, tickets de vuelo y cruceros",
+            }
+          },
+          {
+            id: 3,
+            props: {
+              value: " ",
+            }
+          },
+        ],
+        [
+          {
+            id: 4,
+            props: {
+            }
           },
         ],
       ],
@@ -75,7 +126,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="text-dark" style={{backgroundColor: "#CCE6E6"}}>
         <nav className="navbar navbar-expand-lg navbar-light bg-primary sticky-top top-0">
           <div className="container-fluid text-center">
             <a class="navbar-brand text-light" href="#">Turismo Maya</a>

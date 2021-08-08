@@ -7,7 +7,7 @@ export default function Preview({template}) {
       {
         template.map((section, index) => {
           return (
-            <div id={"section" + index} className="row">
+            <div id={"section" + index} className="row position-relative">
               {
                 section.map((item, index) => {
                   return (
