@@ -129,7 +129,8 @@ export default class App extends Component {
       <div className="text-dark" style={{backgroundColor: "#CCE6E6"}}>
         <nav className="navbar navbar-expand-lg navbar-light bg-primary sticky-top top-0">
           <div className="container-fluid text-center">
-            <a class="navbar-brand text-light" href="#">Turismo Maya</a>
+            <a class="navbar-brand text-light" href="#"><img src="logo192.png"
+              style={{height: "30px"}} /> Turismo Maya</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarNav" aria-controls="navbarNav"
               aria-expanded="false" aria-label="Toggle navigation">

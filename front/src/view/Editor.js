@@ -63,11 +63,11 @@ export default class Editor extends Component {
           <div id="Panel" className="bg-secondary col-4 p-3"
             style={{position: "fixed", right: "0", height: "90vh", overflowY: 'scroll'}}>
             <div className="d-flex justify-content-around">
-              <button className={"btn" + (panel == 0 ? " fw-bold" : "")}
+              <button className={"btn" + (panel === 0 ? " fw-bold" : "")}
                 onClick={() => this.setState({panel: 0})}>Propiedades</button>
-              <button className={"btn" + (panel == 1 ? " fw-bold" : "")}
+              <button className={"btn" + (panel === 1 ? " fw-bold" : "")}
                 onClick={() => this.setState({panel: 1})}>Componentes</button>
-              <button className={"btn" + (panel == 2 ? " fw-bold" : "")}
+              <button className={"btn" + (panel === 2 ? " fw-bold" : "")}
                 onClick={() => this.setState({panel: 2})}>Paleta de colores</button>
             </div>
             <hr />
